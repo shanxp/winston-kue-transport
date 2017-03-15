@@ -1,0 +1,26 @@
+{
+  "name": "winston-kue-transport",
+  "version": "1.0.0",
+  "description": "Winston transporter for Kue library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "keywords": [
+    "winston",
+    "kue",
+    "transport",
+    "logging",
+    "log"
+  ],
+  "author": "Shan Shanmugaesan",
+  "license": "MIT",
+  "dependencies": {
+    "kue": "^0.11.5",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
