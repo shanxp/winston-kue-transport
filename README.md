@@ -5,7 +5,7 @@ Winston transport module for [Kue](https://github.com/Automattic/kue) (tested wi
 ## Usage
 
 ```javascript
-var transport = require('../index.js');
+var transport = require('winston-kue-transport');
 var worker = null, queue = require('kue');
 
 worker = new queue({
@@ -32,13 +32,14 @@ worker.process('queue1', 2, function (job, jobDone) {
     done();
 });
 ```
+All options from Winston module are available here. Additionally **queueName** has been added.
 In order to see the queue items there is a web-based module [kue-ui](https://github.com/stonecircle/kue-ui)
 
 ## Installation
 
-This module will be available soon on [NPM](http://www.npmjs.com)
+This module is available on [NPM](https://www.npmjs.com/package/winston-kue-transport)
 
 ## Tests
 
 Run **npm test**. 
-The current tests check if some dummy values can put into queue. 
+The current tests check if some dummy values can be put into queue. 

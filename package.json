@@ -1,6 +1,6 @@
 {
   "name": "winston-kue-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winston transporter for Kue library",
   "main": "index.js",
   "scripts": {
